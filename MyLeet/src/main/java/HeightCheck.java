@@ -15,7 +15,7 @@ class HeightCheck {
             }
         }
 
-        return count;
+        return count; //returns the countgi
     }
 
     public static void main(String[] args) {
