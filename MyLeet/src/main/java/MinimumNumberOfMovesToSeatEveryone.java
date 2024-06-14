@@ -1,4 +1,4 @@
-class MinimumNumberOfMovesToSeatEveryone {
+/*class MinimumNumberOfMovesToSeatEveryone {
     public int minMovesToSeat(int[] seats, int[] students) {
         Arrays.sort(seats);
         Arrays.sort(students);
@@ -9,4 +9,4 @@ class MinimumNumberOfMovesToSeatEveryone {
         }
         return sum;
     }
-}
+}*/
