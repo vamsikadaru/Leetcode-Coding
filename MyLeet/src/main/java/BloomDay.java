@@ -46,3 +46,25 @@ public class BloomDay {
         System.out.println(sol.minDays(new int[]{7, 7, 7, 7, 12, 7, 7}, 2, 3)); // Output: 12
     }
 }
+
+/*
+To solve this problem, we can use a binary search approach on the number of days. The idea is to find the minimum number of days required to make the required number of bouquets.
+
+Here's a step-by-step approach:
+
+    Define the Binary Search Range:
+        The minimum day (low) is the smallest value in bloomDay.
+        The maximum day (high) is the largest value in bloomDay.
+
+    Binary Search:
+        Perform binary search within the range from low to high.
+        For each day (mid) in the binary search, check if it is possible to make m bouquets with k adjacent flowers blooming on or before mid day.
+
+    Feasibility Check:
+        For a given day (mid), iterate through bloomDay and count how many bouquets can be formed.
+        If the count of bouquets is at least m, then it's feasible for that mid day.
+        Adjust the binary search bounds based on feasibility.
+
+    Edge Cases:
+        If the total number of flowers is less than m * k, it's impossible to make m bouquets, so return -1.
+ */
